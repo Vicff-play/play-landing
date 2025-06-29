@@ -1,98 +1,142 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play – Onde a música toca, a liberdade acontece</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: white;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-            padding: 80px 20px;
-        }
-        header h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #ccc;
-            margin-bottom: 30px;
-        }
-        .cta-buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            background-color: #e91e63;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        section {
-            padding: 60px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        footer {
-            background: #1c1c1c;
-            padding: 30px;
-            font-size: 0.9em;
-            color: #888;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Play - Onde a música toca, a liberdade acontece</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #fff;
+    }
+    header {
+      background: url('images/banner-wedding.jpg') no-repeat center;
+      background-size: cover;
+      height: 400px;
+      position: relative;
+    }
+    header > div {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0 0 10px 0;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.5em;
+      margin: 0 0 20px 0;
+      font-style: italic;
+    }
+    .cta-buttons a {
+      background-color: #1db954;
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      margin: 0 10px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta-buttons a:hover {
+      background-color: #14833b;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1db954;
+    }
+    section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
+    }
+    section p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 30px auto;
+      max-width: 700px;
+      text-align: left;
+      color: #ddd;
+    }
+    ul li::before {
+      content: "✔️";
+      margin-right: 8px;
+      color: #1db954;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      header p {
+        font-size: 1.1em;
+      }
+      .cta-buttons a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Play</h1>
-        <p>Onde a música toca, a liberdade acontece.</p>
-        <div class="cta-buttons">
-            <a href="#formulario">Quero tocar</a>
-            <a href="#formulario">Preciso de músicos</a>
-        </div>
-    </header>
+  <header>
+    <div>
+      <h1>Play</h1>
+      <p>Onde a música toca, a liberdade acontece.</p>
+      <div class="cta-buttons">
+        <a href="#formulario">Quero tocar</a>
+        <a href="#formulario">Preciso de músicos</a>
+      </div>
+    </div>
+  </header>
 
-    <section>
-        <h2>O que é o Play?</h2>
-        <p>O Play é um aplicativo que conecta músicos a eventos como casamentos, cultos, festas e shows. Uma plataforma pensada para quem ama a música e deseja transformar vidas por meio dela.</p>
-    </section>
+  <section>
+    <h2>Casamento</h2>
+    <img src="images/banner-wedding.jpg" alt="Músicos tocando em casamento" />
+    <p>Músicos profissionais para transformar seu momento especial em uma experiência inesquecível.</p>
+  </section>
 
-    <section>
-        <h2>Por que usar o Play?</h2>
-        <ul style="text-align: left; display: inline-block;">
-            <li>✔️ Contratação fácil, segura e rápida</li>
-            <li>✔️ Pagamento via escrow</li>
-            <li>✔️ Músicos com avaliações e vídeos</li>
-            <li>✔️ Múltiplos estilos: gospel, instrumental, secular</li>
-            <li>✔️ Para eventos de todos os tipos</li>
-        </ul>
-    </section>
+  <section>
+    <h2>Show Gospel</h2>
+    <img src="images/show-gospel.jpg" alt="Show gospel ao vivo" />
+    <p>Apresentações cheias de energia e louvor, conectando o público com a mensagem divina.</p>
+  </section>
 
-    <section id="formulario">
-        <h2>Cadastre-se para ser avisado no lançamento!</h2>
-        <form>
-            <input type="text" placeholder="Seu nome" style="padding: 10px; width: 80%; max-width: 300px; margin-bottom: 10px;"><br>
-            <input type="email" placeholder="Seu e-mail" style="padding: 10px; width: 80%; max-width: 300px; margin-bottom: 10px;"><br>
-            <select style="padding: 10px; width: 80%; max-width: 300px; margin-bottom: 10px;">
-                <option>Sou músico</option>
-                <option>Sou contratante</option>
-                <option>Sou ambos</option>
-            </select><br>
-            <button type="submit" style="padding: 12px 25px; background-color: #e91e63; color: white; border: none; border-radius: 5px;">Cadastrar</button>
-        </form>
-    </section>
+  <section>
+    <h2>Apresentação ao Ar Livre</h2>
+    <img src="images/ao-ar-livre.jpg" alt="Músicos ao ar livre" />
+    <p>Eventos em espaços abertos, proporcionando contato direto com a natureza e o público.</p>
+  </section>
 
-    <footer>
-        © 2025 Play. Todos os direitos reservados.  
-        <br>Instagram: @playofficial · contato@play.app
-    </footer>
+  <section>
+    <h2>Culto</h2>
+    <img src="images/culto.jpg" alt="Grupo ministrando adoração" />
+    <p>Ministração de louvor e adoração, unindo o corpo de Cristo em um só espírito.</p>
+  </section>
+
+  <!-- Aqui você pode adicionar o formulário ou outras seções -->
+
 </body>
 </html>
