@@ -136,7 +136,106 @@
     <p>Ministração de louvor e adoração, unindo o corpo de Cristo em um só espírito.</p>
   </section>
 
-  <!-- Aqui você pode adicionar o formulário ou outras seções -->
+
+
+# HTML básico da landing page com formulário
+landing_page_html = """
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        padding: 20px;
+        color: #333;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #a92bff;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .section {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid #eee;
+    }
+    .submit-btn {
+        margin-top: 30px;
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        background: #a92bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <h1>Quero fazer parte do PLAY</h1>
+    
+    <label>Você é:</label>
+    <select>
+        <option value="">Selecione</option>
+        <option value="musico">Sou músico</option>
+        <option value="contratante">Sou contratante</option>
+    </select>
+    
+    <div class="section">
+        <h2>Dados Pessoais</h2>
+        <label>Nome completo:</label>
+        <input type="text" placeholder="Digite seu nome">
+        
+        <label>E-mail:</label>
+        <input type="email" placeholder="Digite seu e-mail">
+
+        <label>Telefone com WhatsApp:</label>
+        <input type="tel" placeholder="(XX) XXXXX-XXXX">
+
+        <label>Cidade e Estado:</label>
+        <input type="text" placeholder="Ex: Rio de Janeiro - RJ">
+    </div>
+
+    <div class="section">
+        <h2>Informações adicionais</h2>
+        <label>Estilo(s) musical(is) ou tipo de evento:</label>
+        <input type="text" placeholder="Ex: Gospel, Pop, Sertanejo / Casamentos, Shows...">
+        
+        <label>Link de portfólio (Instagram, YouTube etc):</label>
+        <input type="url" placeholder="https://...">
+
+        <label>Mensagem ou observações:</label>
+        <textarea rows="4" placeholder="Conte um pouco sobre seu trabalho ou o que espera do app..."></textarea>
+    </div>
+
+    <div>
+        <label><input type="checkbox"> Desejo receber novidades do app por e-mail ou WhatsApp</label>
+    </div>
+
+    <button class="submit-btn">QUERO PARTICIPAR</button>
+</div>
+"""
+
+# Exibir o formulário HTML
+display(HTML(landing_page_html))
 
 </body>
 </html>
